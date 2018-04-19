@@ -19,6 +19,7 @@ namespace ImageResizer.Plugins.UniqueUrlFolderPresets.Epi
                     .AddSingleton<IPresetParser, PresetParser>()
                     .AddSingleton<IContentHashHelper, ContentHashHelper>()
                     .AddSingleton<IRewriteHelper, RewriteHelper>()
+					.AddSingleton<IResizeHelper, ResizeHelper>()
                     .AddSingleton<ICacheHelper, CacheHelper>();
             };
         }
